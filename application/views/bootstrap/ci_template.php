@@ -2,7 +2,7 @@
     <div class="starter-template">
         <h1>Simple Codeigniter Template System</h1>
         <p class="lead">
-            This method lets you build complex Application with multiple page without repeat "loading" the same view files in every page.
+            Custom codeigniter library lets you build complex Application with multiple and dynamic pages.
         </p>
     </div>
 </div>

@@ -6,7 +6,8 @@ class Ci_template extends MY_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->navbar_menu = array(
+		$this->template->page_title = 'Simple Codeigniter Library Template';
+		$this->template->navbar_menu = array(
 				// array(
 				// 	'label'		=> 'View Tutorial',
 				// 	'url'		=> 'https://codenolimit.com/sdcsdcsdc',
@@ -22,9 +23,8 @@ class Ci_template extends MY_Controller {
 
 	public function index()
 	{
-		$this->page_title = 'Simple Codeigniter Template';
-		$main_content = $this->load->view('bootstrap/ci_template', '', TRUE);
-		$this->set_template($main_content);
+		$data = array();
+		$this->template->load('default', 'bootstrap/ci_template');
 	}
 
 
